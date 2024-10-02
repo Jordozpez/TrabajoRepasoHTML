@@ -1,0 +1,108 @@
+/* Restablecimiento básico para todo el contenido */
+* {
+    font-family: "Century Gothic", sans-serif; /* Establece la fuente predeterminada */
+    color: black; /* Define el color del texto como negro */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    text-align: center; /* Alinea el contenido del encabezado al centro */
+    padding: 20px; /* Añade un relleno de 20px alrededor del contenido */
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    width: 60%; /* Define el ancho del contenedor de navegación al 80% del ancho de la página */
+    margin: auto; /*centra horizontalmente */
+    border-radius: 10px; /* Redondea los bordes del contenedor de navegación */
+    background-color: #1286c9; /* Establece el color de fondo del menú */
+    padding: 10px; /* Añade un relleno de 10px dentro del contenedor */
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+/* Estilo de los elementos de la lista de navegación */
+nav li {
+    display: inline-block; /* Hace que los elementos de la lista se alineen en una fila */
+}
+
+/* Estilos para los enlaces de navegación */
+nav a {
+    padding: 10px 20px; /* Añade un relleno de 10px vertical y 20px horizontal a los enlaces */
+    display: inline-block; /* Hace que los enlaces respeten el tamaño del padding */
+    color: white; /* Cambia el color del texto de los enlaces a blanco */
+}
+
+/* Efecto hover para los enlaces de navegación */
+nav a:hover {
+    background-color: white; /* Cambia el fondo a blanco cuando el enlace es seleccionado (hover) */
+    color: #1286c9; /* Cambia el color del texto a azul cuando el enlace es seleccionado */
+}
+
+/* Estilos generales para las secciones de contenido */
+section {
+    padding: 10px; /* Añade un relleno de 20px dentro de la sección */
+    margin: 10px; /* Añade un margen exterior de 20px */
+    background-color: #87c4e8; /* Establece el fondo de la sección en blanco */
+    border-radius: 10px; /* Redondea las esquinas de las secciones */
+}
+
+/* Imagen en la sección "Sobre mí" */
+#sobre-mi img {
+    width: 150px; /* Define un ancho fijo para la imagen */
+    height: 150px; /* Define una altura fija para la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen para que mantenga sus proporciones sin deformarse */
+    float: right; /* Mueve la imagen hacia la derecha */
+    margin-left: 10px; /* Añade un margen a la izquierda de la imagen */
+    margin-right: 10; /* Elimina el margen derecho */
+}
+
+/* Imagen en la sección "Proyectos" */
+#proyectos img {
+    width: 200px; /* Establece un ancho fijo para las imágenes en esta sección */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener las proporciones */
+    border-radius: 5%; /* No redondea las esquinas de las imágenes */
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    display: flex; /* Utiliza Flexbox para organizar los elementos del formulario */
+    flex-direction: column; /* Coloca los elementos del formulario en una columna vertical */
+}
+
+/* Estilos para las etiquetas del formulario */
+form label {
+    margin: 10px 0 5px; /* Añade margen superior e inferior para separar las etiquetas del resto del contenido */
+}
+
+/* Estilos para los campos de texto y correo electrónico */
+form input[type="text"],
+form input[type="email"] {
+    padding: 10px; /* Añade un relleno de 10px dentro de los campos */
+    border: 1px solid #ccc; /* Define un borde gris claro para los campos */
+    border-radius: 4px; /* Redondea ligeramente los bordes de los campos */
+}
+
+/* Estilos para el botón de envío del formulario */
+form input[type="submit"] {
+    padding: 10px; /* Añade un relleno de 10px alrededor del texto del botón */
+    background-color: #1286c9; /* Establece un color de fondo azul para el botón */
+    color: white; /* Cambia el color del texto del botón a blanco */
+    border: none; /* Elimina el borde alrededor del botón */
+    border-radius: 4px; /* Redondea ligeramente los bordes del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #1286c9; /* Establece un color de fondo azul para el pie de página */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra horizontalmente el contenido del pie de página */
+    padding: 10px; /* Añade un relleno de 10px alrededor del contenido del pie de página */
+    width: 100%; /* Asegura que el pie de página cubra el ancho completo de la página */
+}
+
+/* Estilos para el enlace de Instagram en el pie de página */
+footer a {
+    color: #c720b9; /* Establece un color específico para el enlace de Instagram */
+}

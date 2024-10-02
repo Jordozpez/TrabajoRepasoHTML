@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo de repaso HTML y CSS.</title>
+	<link rel= "stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- Encabezado -->
+	<header>
+		<h1>Jorge Dominguez</h1>
+		<p>Bienvenido a mi trabajo de repaso de HTML y CSS.</p>
+	</header>
+
+	<!-- Menú de navegación -->
+	<nav>
+		<ul>
+			<li><a href="#sobre-mi">Sobre mí</a></li>
+			<li><a href="#proyectos">Proyectos</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</nav>
+	<br>
+
+	<!-- Sección: Sobre mí -->
+	<section id="sobre-mi">
+		<h2>Sobre mí</h2>
+		<div class="content">
+			<img src="./Foto.jpeg" alt="Foto de Jorge Dominguez">
+			<p>Soy una persona a la que le encanta mantenerse activa y curiosa. Disfruto mucho del deporte porque me permite desconectar y mantenerme saludable, además de la emoción que trae cada competencia. También me encanta probar nuevas comidas, siempre buscando experimentar nuevos sabores y culturas a través de la gastronomía. Viajar es una de mis grandes pasiones, ya que me da la oportunidad de conocer diferentes lugares y formas de vivir. En cuanto a la programación, lo que me atrae es la posibilidad de crear soluciones innovadoras, resolver problemas y ver cómo la tecnología puede mejorar la vida de las personas. La programación me permite combinar lógica y creatividad, y eso me resulta fascinante.</p>
+		</div>
+		<br>
+		<h3>Lista de Habilidades</h3>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>Java</li>
+		</ul>
+	</section>
+	<br><br>
+
+	<!-- Sección: Proyectos -->
+	<section id="proyectos">
+		<h2>Proyectos</h2>
+		<br>
+		<h3>Proyecto 1</h3>
+		<img src="./Proyecto.png" alt="Imagen del proyecto 1" width="200">
+		<p>Este es uno de los proyectos realizados el curso pasado en clase de lenguaje de marcas, sé que es feo, pero el profesor lo quería así.</p>
+		<br>
+		<a href="https://enlaceproyectofeo.com">Ver proyecto</a>
+		<br>
+	</section>
+	<br><br>
+
+	<!-- Sección: Contacto -->
+	<section id="contacto">
+		<h2>Contacto</h2>
+
+		<form action="#" method="POST">
+			<label for="nombre">Nombre:</label><br>
+			<input type="text" id="nombre" name="nombre" required><br><br>
+
+			<label for="email">Correo electrónico:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+
+			<label for="mensaje">Mensaje:</label><br>
+			<input type="text" id="mensaje" name="mensaje" required><br><br>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</section>
+
+	<!-- Pie de página -->
+	<footer>
+		<p>&copy; 2024 Jorge Dominguez, Curso: 2º de DAM</p>
+		<p>Sígueme en <a href="https://www.instagram.com/jordozpez/">Instagram</a></p>
+	</footer>
+
+</body>
+</html>
