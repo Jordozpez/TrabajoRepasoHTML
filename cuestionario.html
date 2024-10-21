@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuestionario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h2>Cuestionario</h2>
+
+	<form id="cuestionario">
+		<div id="pregunta-container"></div>
+		<br>
+		<button type="button" id="prevBtn" onclick="anteriorPregunta()">Anterior pregunta</button>
+		<button type="button" id="nextBtn" onclick="siguientePregunta()">Siguiente pregunta</button>
+		<button type="button" id="exitBtn" onclick="salirCuestionario()">Salir del cuestionario</button>
+	</form>
+
+	<script>
+		// Función para salir del cuestionario y redirigir al index.html
+		function salirCuestionario() {
+			window.location.href = "index.html"; // Redirige al archivo index.html
+		}
+	</script>
+	
+	<script>
+		let preguntas = [];
+		let currentQuestionIndex = 0;
+
+		function loadXML() {
+			let xhttp = new XMLHttpRequest();
+
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					let xmlDoc = this.responseXML;
+					let preguntasXML = xmlDoc.getElementsByTagName("Pregunta");
+
+					for (let i = 0; i < preguntasXML.length; i++) {
+						let titulo = preguntasXML[i].getElementsByTagName("Titulo")[0].childNodes[0].nodeValue;
+						let opciones = preguntasXML[i].getElementsByTagName("Opcion");
+						let opcionesArray = [];
+
+						for (let j = 0; j < opciones.length; j++) {
+							opcionesArray.push(opciones[j].childNodes[0].nodeValue);
+						}
+
+						preguntas.push({
+							titulo: titulo,
+							opciones: opcionesArray
+						});
+					}
+
+					mostrarPregunta();
+				}
+			};
+			xhttp.open("GET", "preguntas.xml", true);
+			xhttp.send();
+		}
+
+		function mostrarPregunta() {
+			let preguntaActual = preguntas[currentQuestionIndex];
+			let preguntaContainer = document.getElementById("pregunta-container");
+			let preguntaHTML = "<h3>" + preguntaActual.titulo + "</h3>";
+			preguntaHTML += "<ul>";
+
+			for (let i = 0; i < preguntaActual.opciones.length; i++) {
+				preguntaHTML += "<li><input type='radio' name='opcion' value='" + preguntaActual.opciones[i] + "'> " + preguntaActual.opciones[i] + "</li>";
+			}
+
+			preguntaHTML += "</ul>";
+			preguntaContainer.innerHTML = preguntaHTML;
+
+			document.getElementById("prevBtn").disabled = currentQuestionIndex === 0;
+			document.getElementById("nextBtn").disabled = currentQuestionIndex === preguntas.length - 1;
+		}
+
+		function siguientePregunta() {
+			if (currentQuestionIndex < preguntas.length - 1) {
+				currentQuestionIndex++;
+				mostrarPregunta();
+			}
+		}
+
+		function anteriorPregunta() {
+			if (currentQuestionIndex > 0) {
+				currentQuestionIndex--;
+				mostrarPregunta();
+			}
+		}
+
+		window.onload = function() {
+			loadXML();
+		};
+	</script>
+
+</body>
+</html>

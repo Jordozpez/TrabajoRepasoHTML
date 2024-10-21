@@ -75,6 +75,10 @@ form label {
     margin: 10px 0 5px; /* Añade margen superior e inferior para separar las etiquetas del resto del contenido */
 }
 
+#preguntas {
+    text-align: center;
+}
+
 /* Estilos para los campos de texto y correo electrónico */
 form input[type="text"],
 form input[type="email"] {
@@ -105,4 +109,34 @@ footer {
 /* Estilos para el enlace de Instagram en el pie de página */
 footer a {
     color: #c720b9; /* Establece un color específico para el enlace de Instagram */
+}
+
+/* Estilos para el cuestionario */
+h2 {
+    text-align: center; /* Centra el título del cuestionario */
+}
+
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+}
+
+ul li {
+    margin: 10px 0; /* Añade margen entre las opciones de respuesta */
+}
+
+button {
+    padding: 10px 20px; /* Añade relleno a los botones */
+    margin: 5px; /* Añade margen alrededor de los botones */
+    background-color: #1286c9; /* Establece un color de fondo azul para los botones */
+    color: white; /* Cambia el color del texto de los botones a blanco */
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 5px; /* Redondea los bordes de los botones */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    flex
+}
+
+button:disabled {
+    background-color: gray; /* Cambia el fondo a gris para los botones desactivados */
+    cursor: not-allowed; /* Cambia el cursor a indicar que no se puede hacer clic */
 }

@@ -1,0 +1,81 @@
+<Preguntas>
+  <Pregunta>
+    <Titulo>¿Qué significa XML?</Titulo>
+    <Opcion>A. Lenguaje de Marcado Extensible</Opcion>
+    <Opcion>B. Lenguaje de Ejemplo de Marcado</Opcion>
+    <Opcion>C. Lenguaje Múltiple Ejecutable</Opcion>
+    <Opcion>D. Lenguaje de Marcado Extra</Opcion>
+  </Pregunta>
+  
+  <Pregunta>
+    <Titulo>¿Para qué se utiliza AJAX?</Titulo>
+    <Opcion>A. Crear animaciones</Opcion>
+    <Opcion>B. Enviar y recibir datos de manera asincrónica</Opcion>
+    <Opcion>C. Formatear texto en una página web</Opcion>
+    <Opcion>D. Estilizar una página web</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Cuál de las siguientes es una característica de XML?</Titulo>
+    <Opcion>A. Es un lenguaje de programación</Opcion>
+    <Opcion>B. Se utiliza para estilizar páginas web</Opcion>
+    <Opcion>C. Es un lenguaje de marcado para el almacenamiento y transporte de datos</Opcion>
+    <Opcion>D. Solo se usa en el desarrollo web</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Cuál es el rol del objeto XMLHttpRequest en AJAX?</Titulo>
+    <Opcion>A. Cargar CSS de forma asincrónica</Opcion>
+    <Opcion>B. Enviar y recibir solicitudes y respuestas HTTP</Opcion>
+    <Opcion>C. Almacenar datos de la sesión del usuario</Opcion>
+    <Opcion>D. Gestionar el historial del navegador</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Cuál de las siguientes afirmaciones NO es verdadera sobre XML?</Titulo>
+    <Opcion>A. Es sensible a mayúsculas y minúsculas</Opcion>
+    <Opcion>B. Define la presentación de los datos</Opcion>
+    <Opcion>C. Se utiliza para almacenar y transportar datos</Opcion>
+    <Opcion>D. Las etiquetas son definidas por el usuario</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Qué método se utiliza para enviar una solicitud HTTP en AJAX?</Titulo>
+    <Opcion>A. send()</Opcion>
+    <Opcion>B. open()</Opcion>
+    <Opcion>C. fetch()</Opcion>
+    <Opcion>D. load()</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Qué etiqueta se utiliza en XML para definir un comentario?</Titulo>
+    <Opcion>A. &lt;comentario&gt;</Opcion>
+    <Opcion>B. &lt;!-- --&gt;</Opcion>
+    <Opcion>C. &lt;comment&gt;</Opcion>
+    <Opcion>D. &lt;#-- --#&gt;</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Cuál es una de las ventajas principales de AJAX?</Titulo>
+    <Opcion>A. Reduce la seguridad de la aplicación</Opcion>
+    <Opcion>B. Mejora la velocidad de procesamiento del servidor</Opcion>
+    <Opcion>C. Permite la actualización parcial de la página sin recargarla completamente</Opcion>
+    <Opcion>D. Mejora la accesibilidad de la página web</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Cómo se estructura un documento XML correctamente?</Titulo>
+    <Opcion>A. Puede tener múltiples elementos raíz</Opcion>
+    <Opcion>B. Debe tener un solo elemento raíz</Opcion>
+    <Opcion>C. Los atributos deben estar fuera de las etiquetas</Opcion>
+    <Opcion>D. Las etiquetas no tienen que cerrarse</Opcion>
+  </Pregunta>
+
+  <Pregunta>
+    <Titulo>¿Qué tecnología se combina con AJAX para enviar datos al servidor?</Titulo>
+    <Opcion>A. CSS</Opcion>
+    <Opcion>B. JavaScript</Opcion>
+    <Opcion>C. PHP</Opcion>
+    <Opcion>D. HTML</Opcion>
+  </Pregunta>
+</Preguntas>
